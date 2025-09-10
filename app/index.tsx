@@ -27,18 +27,13 @@ export default function Index() {
         <Image source={imgSlide1} style={customizer.sizeImage}></Image>
         <Image source={imgSlide1} style={customizer.sizeImage}></Image>
       </ScrollView>
-        <Text style={{fontSize:20, margin:20}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</Text>
-        <Text style={{fontSize:20, margin:20}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</Text>
-        <Text style={{fontSize:20, margin:20}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</Text>
-        <Text style={{fontSize:20, margin:20}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</Text>
-        <Text style={{fontSize:20, margin:20}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</Text>
-        <Text style={{fontSize:20, margin:20}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</Text>
-        <Text style={{fontSize:20, margin:20}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</Text>
-        <Text style={{fontSize:20, margin:20}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</Text>
-        <Text style={{fontSize:20, margin:20}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</Text>
-        <Text style={{fontSize:20, margin:20}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</Text>
-        <Text style={{fontSize:20, margin:20}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</Text>
+        <Text style={customizer.titleMain}>Escapade à Mbouda : Au cœur des traditions et des paysages</Text>
+        <Text style={customizer.styleText}>Mbouda est nichée au cœur de l’Ouest Cameroun, une région réputée pour ses collines verdoyantes et son climat frais. Le trajet vers le village est déjà une expérience en soi : on traverse des routes bordées de champs de maïs, de bananeraies et de plantations de café. Les montagnes qui entourent la ville offrent des panoramas spectaculaires, parfaits pour les amoureux de la nature et de la photographie.</Text>
+        <Text style={customizer.styleText}>Le marché de Mbouda est l’un des plus animés de la région. On y découvre l’authenticité du terroir : tubercules (macabo, taro, igname), fruits exotiques, épices locales, mais aussi des mets préparés comme le maïs grillé ou les beignets haricot. L’ambiance est vibrante : les commerçants interpellent les passants, les couleurs éclatent à chaque étal et les échanges reflètent l’esprit communautaire bamiléké. C’est une véritable immersion dans la culture locale.</Text>
+        <Text style={customizer.styleText}>Le voyage à Mbouda ne se limite pas aux paysages et au marché : il est aussi un retour aux origines. Dans les villages, les familles accueillent toujours les visiteurs avec chaleur et simplicité. Les traditions se vivent au quotidien : partage des repas, veillées animées, et transmission des histoires familiales. L’hospitalité bamiléké renforce le sentiment d’appartenance et de connexion aux racines, une expérience profondément humaine et mémorable.</Text>
+        
       </ScrollView>
+      <Text style={customizer.footer}>Ceci est la fin</Text>
     </View>
     </SafeAreaView>
     
@@ -56,8 +51,41 @@ const customizer = StyleSheet.create({
     shadowOffset: {width: 0, height:6},
     shadowColor: 'black',
     shadowRadius: 16,
-    shadowOpacity:0.5
+    shadowOpacity:0.3
   },
-  styleText:{}
+  styleText:{
+    borderStyle:'solid',
+    borderColor:'black',
+    borderRadius:24,
+    fontSize:20,
+    margin:20,
+    backgroundColor:'rgba(199, 231, 203, 1)',
+    shadowOffset: {width: 0, height:0},
+    shadowColor: 'black',
+    shadowRadius: 16,
+    shadowOpacity:0.3,
+    padding:20
+  },
+  titleMain:{
+    zIndex: 99,
+    marginTop: -20,
+    backgroundColor:'rgb(230,90,20)',
+    textAlign:'center',
+    maxWidth:400,
+    minHeight:70,
+    alignItems:'center',
+    flex:1,
+    alignSelf:'center',
+    padding:12,
+    fontSize:28,
+    borderRadius:20,
+    shadowOffset: {width: 0, height:0},
+    shadowColor: 'black',
+    shadowRadius: 16,
+    shadowOpacity:0.7,
+  },
+  footer:{
+    
+  }
 })
 
