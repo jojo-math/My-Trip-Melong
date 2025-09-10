@@ -33,7 +33,7 @@ export default function Index() {
         <Text style={customizer.styleText}>Le voyage à Mbouda ne se limite pas aux paysages et au marché : il est aussi un retour aux origines. Dans les villages, les familles accueillent toujours les visiteurs avec chaleur et simplicité. Les traditions se vivent au quotidien : partage des repas, veillées animées, et transmission des histoires familiales. L’hospitalité bamiléké renforce le sentiment d’appartenance et de connexion aux racines, une expérience profondément humaine et mémorable.</Text>
         
       </ScrollView>
-      <Text style={customizer.footer}>Ceci est la fin</Text>
+      <Text style={customizer.footer}>©2025 Copyright Ceci est la fin</Text>
     </View>
     </SafeAreaView>
     
@@ -85,7 +85,10 @@ const customizer = StyleSheet.create({
     shadowOpacity:0.7,
   },
   footer:{
-    
+    backgroundColor:'blue',
+    textAlign:'center',
+    color:'white',
+    paddingVertical:10
   }
 })
 
