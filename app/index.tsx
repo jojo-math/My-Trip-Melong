@@ -1,7 +1,9 @@
 import { Image } from "expo-image";
 import { SafeAreaView, ScrollView, StyleSheet, Text, View } from "react-native";
 
-const imgSlide1 = require("@/assets/images/icon.png");
+const imgSlide1 = require("@/assets/images/route-mbouda.jpg");
+const imgSlide2 = require("@/assets/images/marche-mbouda.webp");
+const imgSlide3 = require("@/assets/images/vie-village.webp");
 
 export default function Index() {
   return (
@@ -21,8 +23,8 @@ export default function Index() {
           contentContainerStyle={styles.imageRow}
         >
           <Image source={imgSlide1} style={styles.image} />
-          <Image source={imgSlide1} style={styles.image} />
-          <Image source={imgSlide1} style={styles.image} />
+          <Image source={imgSlide2} style={styles.image} />
+          <Image source={imgSlide3} style={styles.image} />
         </ScrollView>
         {/* Header */}
       <View style={styles.header}>
