@@ -6,11 +6,6 @@ const imgSlide1 = require("@/assets/images/icon.png");
 export default function Index() {
   return (
     <SafeAreaView style={styles.container}>
-      {/* Header */}
-      <View style={styles.header}>
-        <Text style={styles.appName}>🌍 MyTrip Mbouda</Text>
-      </View>
-
       {/* Contenu principal scrollable */}
       <ScrollView
         showsVerticalScrollIndicator={false}
@@ -20,7 +15,8 @@ export default function Index() {
         <ScrollView
           horizontal
           showsHorizontalScrollIndicator={false}
-          snapToInterval={320}
+          snapToInterval={240} // Largeur de l'image + marge
+          snapToAlignment="start"
           decelerationRate="fast"
           contentContainerStyle={styles.imageRow}
         >
@@ -28,6 +24,10 @@ export default function Index() {
           <Image source={imgSlide1} style={styles.image} />
           <Image source={imgSlide1} style={styles.image} />
         </ScrollView>
+        {/* Header */}
+      <View style={styles.header}>
+        <Text style={styles.appName}>🌍 Mon voyage à Mbouda</Text>
+      </View>
 
         {/* Titre */}
         <Text style={styles.title}>
@@ -77,16 +77,22 @@ const styles = StyleSheet.create({
 
   header: {
     height: 60,
+    maxWidth: 600,
     justifyContent: "center",
     alignItems: "center",
+    
     backgroundColor: "#2E7D32",
     elevation: 3,
+    borderRadius: 12,
+    margin: 'auto',
+    paddingHorizontal: 16,
+    marginTop:'auto'
   },
   appName: { fontSize: 18, fontWeight: "bold", color: "#FFF" },
 
   scrollContent: { paddingBottom: 100 },
 
-  imageRow: { paddingHorizontal: 16, gap: 16 },
+  imageRow: { paddingHorizontal: 16, gap: 16, marginVertical: 16 },
   image: {
     height: 200,
     width: 300,
