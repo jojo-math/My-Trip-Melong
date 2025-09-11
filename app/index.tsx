@@ -1,94 +1,125 @@
 import { Image } from "expo-image";
 import { SafeAreaView, ScrollView, StyleSheet, Text, View } from "react-native";
 
-const logo = {
-  uri: 'https://reactnative.dev/img/tiny_logo.png',
-  width: 64,
-  height: 64,
-};
-const imgSlide1 = require("@/assets/images/icon.png")
+const imgSlide1 = require("@/assets/images/icon.png");
+
 export default function Index() {
   return (
-    <SafeAreaView style={{flex:1}}>
-      <View
-      style={{
-        flex:1,
-        alignContent:"center"
-      }}
-    >
-      <ScrollView snapToInterval={200} decelerationRate="fast" showsVerticalScrollIndicator={false}>
-      <ScrollView horizontal snapToInterval={240} decelerationRate="fast" showsHorizontalScrollIndicator={false} contentContainerStyle={{alignItems:'center'}} style={{height:300, backgroundColor:'rgba(61, 204, 25, 1)', opacity:0.75}}>
-        <Image source={imgSlide1} style={customizer.sizeImage}></Image>
-        <Image source={imgSlide1} style={customizer.sizeImage}></Image>
-        <Image source={imgSlide1} style={customizer.sizeImage}></Image>
-        <Image source={imgSlide1} style={customizer.sizeImage}></Image>
-        <Image source={imgSlide1} style={customizer.sizeImage}></Image>
-        <Image source={imgSlide1} style={customizer.sizeImage}></Image>
-        <Image source={imgSlide1} style={customizer.sizeImage}></Image>
-        <Image source={imgSlide1} style={customizer.sizeImage}></Image>
+    <SafeAreaView style={styles.container}>
+      {/* Header */}
+      <View style={styles.header}>
+        <Text style={styles.appName}>🌍 MyTrip Mbouda</Text>
+      </View>
+
+      {/* Contenu principal scrollable */}
+      <ScrollView
+        showsVerticalScrollIndicator={false}
+        contentContainerStyle={styles.scrollContent}
+      >
+        {/* Galerie horizontale */}
+        <ScrollView
+          horizontal
+          showsHorizontalScrollIndicator={false}
+          snapToInterval={320}
+          decelerationRate="fast"
+          contentContainerStyle={styles.imageRow}
+        >
+          <Image source={imgSlide1} style={styles.image} />
+          <Image source={imgSlide1} style={styles.image} />
+          <Image source={imgSlide1} style={styles.image} />
+        </ScrollView>
+
+        {/* Titre */}
+        <Text style={styles.title}>
+          Escapade à Mbouda : Au cœur des traditions et des paysages
+        </Text>
+
+        {/* Faits marquants */}
+        <View style={styles.card}>
+          <Text style={styles.cardText}>
+            🌄 Mbouda est nichée au cœur de l’Ouest Cameroun, une région réputée
+            pour ses collines verdoyantes et son climat frais. Le trajet vers le
+            village est déjà une expérience en soi : on traverse des routes
+            bordées de champs de maïs, de bananeraies et de plantations de café.
+          </Text>
+        </View>
+
+        <View style={styles.card}>
+          <Text style={styles.cardText}>
+            🛍️ Le marché de Mbouda est l’un des plus animés de la région. On y
+            découvre l’authenticité du terroir : tubercules, fruits exotiques,
+            épices locales, mais aussi du maïs grillé et des beignets haricot.
+          </Text>
+        </View>
+
+        <View style={styles.card}>
+          <Text style={styles.cardText}>
+            👨‍👩‍👧‍👦 Le voyage à Mbouda est aussi un retour aux origines. Les
+            familles accueillent toujours les visiteurs avec chaleur et
+            simplicité. L’hospitalité bamiléké renforce le sentiment
+            d’appartenance et de connexion aux racines.
+          </Text>
+        </View>
       </ScrollView>
-        <Text style={customizer.titleMain}>Escapade à Mbouda : Au cœur des traditions et des paysages</Text>
-        <Text style={customizer.styleText}>Mbouda est nichée au cœur de l’Ouest Cameroun, une région réputée pour ses collines verdoyantes et son climat frais. Le trajet vers le village est déjà une expérience en soi : on traverse des routes bordées de champs de maïs, de bananeraies et de plantations de café. Les montagnes qui entourent la ville offrent des panoramas spectaculaires, parfaits pour les amoureux de la nature et de la photographie.</Text>
-        <Text style={customizer.styleText}>Le marché de Mbouda est l’un des plus animés de la région. On y découvre l’authenticité du terroir : tubercules (macabo, taro, igname), fruits exotiques, épices locales, mais aussi des mets préparés comme le maïs grillé ou les beignets haricot. L’ambiance est vibrante : les commerçants interpellent les passants, les couleurs éclatent à chaque étal et les échanges reflètent l’esprit communautaire bamiléké. C’est une véritable immersion dans la culture locale.</Text>
-        <Text style={customizer.styleText}>Le voyage à Mbouda ne se limite pas aux paysages et au marché : il est aussi un retour aux origines. Dans les villages, les familles accueillent toujours les visiteurs avec chaleur et simplicité. Les traditions se vivent au quotidien : partage des repas, veillées animées, et transmission des histoires familiales. L’hospitalité bamiléké renforce le sentiment d’appartenance et de connexion aux racines, une expérience profondément humaine et mémorable.</Text>
-        
-      </ScrollView>
-      <Text style={customizer.footer}>©2025 Copyright Ceci est la fin</Text>
-    </View>
+
+      {/* Footer fixe */}
+      <View style={styles.footer}>
+        <Text style={styles.footerText}>
+          ©2025 My Trip Melong – Tous droits réservés
+        </Text>
+      </View>
     </SafeAreaView>
-    
   );
 }
 
-const customizer = StyleSheet.create({
-  sizeImage:{
-    height:200,
-    width:400,
-    borderRadius:20,
-    marginLeft:40,
-    borderColor:'gray',
-    borderWidth: 2,
-    shadowOffset: {width: 0, height:6},
-    shadowColor: 'black',
-    shadowRadius: 16,
-    shadowOpacity:0.3
-  },
-  styleText:{
-    borderStyle:'solid',
-    borderColor:'black',
-    borderRadius:24,
-    fontSize:20,
-    margin:20,
-    backgroundColor:'rgba(199, 231, 203, 1)',
-    shadowOffset: {width: 0, height:0},
-    shadowColor: 'black',
-    shadowRadius: 16,
-    shadowOpacity:0.3,
-    padding:20
-  },
-  titleMain:{
-    zIndex: 99,
-    marginTop: -20,
-    backgroundColor:'rgb(230,90,20)',
-    textAlign:'center',
-    maxWidth:400,
-    minHeight:70,
-    alignItems:'center',
-    flex:1,
-    alignSelf:'center',
-    padding:12,
-    fontSize:28,
-    borderRadius:20,
-    shadowOffset: {width: 0, height:0},
-    shadowColor: 'black',
-    shadowRadius: 16,
-    shadowOpacity:0.7,
-  },
-  footer:{
-    backgroundColor:'blue',
-    textAlign:'center',
-    color:'white',
-    paddingVertical:10
-  }
-})
+const styles = StyleSheet.create({
+  container: { flex: 1, backgroundColor: "#F9FAFB" },
 
+  header: {
+    height: 60,
+    justifyContent: "center",
+    alignItems: "center",
+    backgroundColor: "#2E7D32",
+    elevation: 3,
+  },
+  appName: { fontSize: 18, fontWeight: "bold", color: "#FFF" },
+
+  scrollContent: { paddingBottom: 100 },
+
+  imageRow: { paddingHorizontal: 16, gap: 16 },
+  image: {
+    height: 200,
+    width: 300,
+    borderRadius: 16,
+  },
+
+  title: {
+    fontSize: 22,
+    fontWeight: "bold",
+    textAlign: "center",
+    marginVertical: 16,
+    color: "#212121",
+  },
+
+  card: {
+    backgroundColor: "#FFF",
+    borderRadius: 16,
+    marginHorizontal: 16,
+    marginBottom: 16,
+    padding: 16,
+    shadowColor: "#000",
+    shadowOpacity: 0.1,
+    shadowOffset: { width: 0, height: 2 },
+    shadowRadius: 6,
+    elevation: 2,
+  },
+  cardText: { fontSize: 16, lineHeight: 22, color: "#424242" },
+
+  footer: {
+    height: 60,
+    justifyContent: "center",
+    alignItems: "center",
+    backgroundColor: "#F57C00",
+  },
+  footerText: { color: "#FFF", fontSize: 14 },
+});
