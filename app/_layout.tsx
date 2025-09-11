@@ -13,7 +13,15 @@ export default function RootLayout() {
           headerTitleStyle: styles.headerTitle,
           headerShadowVisible: false, // supprime la barre grise par défaut
         }}
-      />
+      ></Stack.Screen>
+      <Stack.Screen name="views/trip" 
+        options={{title:"Découvrez mon merveilleux voyage",
+          headerStyle: styles.header,
+          headerTintColor: "#FFF", // couleur du texte et icônes
+          headerTitleStyle: styles.headerTitle,
+          headerShadowVisible: false, // supprime la barre grise par défaut
+          }}
+        ></Stack.Screen>
     </Stack>
   );
 }
